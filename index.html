@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <title>"WebStudio</title>
   </head>
@@ -20,42 +20,44 @@
     <!-- section_1 -->
     <header class="header-border">
       <div class="container header-container">
-        <nav class="navigation">
+        <nav class="header-navigation">
           <a href="./index.html" lang="en" class="logo"
             >Web<span class="logo-dark">Studio</span></a
           >
-          <ul class="menu">
-            <li class="links-header">
-              <a href="./index.html" class="link-header current"> Студія</a>
+          <ul class="header-menu">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link menu__link-current">
+                Студія</a
+              >
             </li>
-            <li class="links-header">
-              <a href="./portfolio.html" class="link-header">Портфоліо</a>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link">Портфоліо</a>
             </li>
-            <li class="links-header">
-              <a href="#" class="link-header">Контакти</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="contacts-header">
-          <li class="mail">
+        <ul class="header-contacts-list">
+          <li class="header-contacts-list__item">
             <a
               href="mailto:info@devstudio.com"
-              class="link-header contact-header"
+              class="header-contacts-list__link"
             >
               <svg
                 aria-label="Електронна пошта"
-                class="contact-header icon-mail"
+                class="header-contacts-list__mail-icon"
               >
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li>
-            <a href="tel:+380961111111" class="link-header contact-header">
+          <li class="header-contacts-list__item">
+            <a href="tel:+380961111111" class="header-contacts-list__link">
               <svg
                 aria-label="Номер телефону"
-                class="contact-header icon-smartphone"
+                class="header-contacts-list__smartphone-icon"
               >
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
@@ -70,7 +72,9 @@
       <!-- section_2 -->
       <section class="poster">
         <div class="container poster-container">
-          <h1 class="poster-title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="poster-container__title">
+            Ефективні рішення для вашого бізнесу
+          </h1>
           <button type="button" class="order-button" data-modal-open>
             Замовити послугу
           </button>
@@ -80,50 +84,50 @@
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наші особливості</h2>
-          <ul class="section3-flex">
-            <li class="section3-card">
-              <div class="section3-icon-border">
-                <svg aria-label="Значок антени" class="section3-icon">
+          <ul class="section3-list">
+            <li class="section3-list__item">
+              <div class="section3-list__icon-border">
+                <svg aria-label="Значок антени" class="section3-list__icon">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="section3-title">Увага до деталей</h3>
-              <p class="section3-text">
+              <h3 class="section3__title">Увага до деталей</h3>
+              <p class="section3__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
             <li class="section3-card">
-              <div class="section3-icon-border">
-                <svg aria-label="Значок годинника" class="section3-icon">
+              <div class="section3-list__icon-border">
+                <svg aria-label="Значок годинника" class="section3-list__icon">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="section3-title">Пунктуальність</h3>
-              <p class="section3-text">
+              <h3 class="section3__title">Пунктуальність</h3>
+              <p class="section3__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
             <li class="section3-card">
-              <div class="section3-icon-border">
-                <svg aria-label="Значок годинника" class="section3-icon">
+              <div class="section3-list__icon-border">
+                <svg aria-label="Значок годинника" class="section3-list__icon">
                   <use href="./images/sprite.svg#icon-notebook"></use>
                 </svg>
               </div>
-              <h3 class="section3-title">Планування</h3>
-              <p class="section3-text">
+              <h3 class="section3__title">Планування</h3>
+              <p class="section3__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="section3-card">
-              <div class="section3-icon-border">
-                <svg aria-label="Значок годинника" class="section3-icon">
+              <div class="section3-list__icon-border">
+                <svg aria-label="Значок годинника" class="section3-list__icon">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="section3-title">Сучасні технології</h3>
-              <p class="section3-text">
+              <h3 class="section3__title">Сучасні технології</h3>
+              <p class="section3__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -134,32 +138,32 @@
       <!-- section_4 -->
       <section class="section4">
         <div class="container">
-          <h2 class="section4-title">Чим ми займаємося</h2>
-          <ul class="section4-flex">
-            <li class="section4-item">
-              <div class="section4-card">
+          <h2 class="page-title">Чим ми займаємося</h2>
+          <ul class="section4-list">
+            <li class="section4-list__item">
+              <div class="section4-list__wrapper">
                 <img
                   src="./images/algoritming.jpg"
                   alt="Алгоритмізація"
                   width="370"
                 />
-                <p class="section3-card-text">Десктопні додатки</p>
+                <p class="section4-list__item-text">Десктопні додатки</p>
               </div>
             </li>
-            <li class="section4-item">
-              <div class="section4-card">
+            <li class="section4-list__item">
+              <div class="section4-list__wrapper">
                 <img
                   src="./images/mobile_develop.jpg"
                   alt="Мобільна розробка"
                   width="370"
                 />
-                <p class="section3-card-text">Мобільні додатки</p>
+                <p class="section4-list__item-text">Мобільні додатки</p>
               </div>
             </li>
-            <li class="section4-item">
-              <div class="section4-card">
+            <li class="section4-list__item">
+              <div class="section4-list__wrapper">
                 <img src="./images/designing.jpg" alt="Дизайн" width="370" />
-                <p class="section3-card-text">Дизайнерські рішення</p>
+                <p class="section4-list__item-text">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
@@ -168,7 +172,7 @@
       <!-- section_5 -->
       <section class="section5_background section">
         <div class="container">
-          <h2 class="section5-title">Наша команда</h2>
+          <h2 class="page-title">Наша команда</h2>
           <ul class="section5-flex">
             <li class="section5_card">
               <img src="./images/igor.jpg" alt="Ігор Дем'яненко" width="270" />
@@ -400,7 +404,7 @@
       <!-- SECTION_6 -->
       <section class="section">
         <div class="container companies-section">
-          <h2 class="section6-title">Постійні клієнти</h2>
+          <h2 class="page-title">Постійні клієнти</h2>
           <ul class="companies-list">
             <li class="companies-list-item">
               <a href="#" class="company-link">
